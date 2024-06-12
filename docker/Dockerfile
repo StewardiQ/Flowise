@@ -12,6 +12,9 @@ RUN npm install -g flowise
 # Stage 2: Runtime stage
 FROM node:20-alpine
 
+#Add python3, make and g++ to install
+RUN apk add --no-cache python3 make g++
+
 # Install runtime dependencies
 RUN apk add --no-cache chromium git python3 py3-pip make g++ build-base cairo-dev pango-dev
 
