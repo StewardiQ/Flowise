@@ -23,5 +23,4 @@ spec:
           requests:
             cpu: "1"
             memory: "1Gi"
-      imagePullSecrets:
-      - name: gcr-json-key
+      
